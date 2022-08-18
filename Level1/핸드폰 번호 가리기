@@ -1,1 +1,15 @@
-test
+class Solution {
+    fun solution(phone_number: String): String {
+        var answer = ""
+          answer = phone_number.substring(phone_number.length - 4 , phone_number.length)
+          var res = ""
+        
+          for (i in 1..phone_number.length - 4 ){
+             res = res.plus("*")
+         }
+                 
+          
+            
+        return res.plus(answer)
+    }
+}
