@@ -1,1 +1,13 @@
-test
+class Solution {
+   fun solution(arr: IntArray): IntArray = if (arr.size > 1) {
+        var res = arr[0]
+        for (i in 1 until arr.size) {
+            if (res > arr[i]) {
+                res = arr[i]
+            }
+        }
+        arr.filter { it > res }.toIntArray()
+    } else {
+        intArrayOf(-1)
+    }
+}
