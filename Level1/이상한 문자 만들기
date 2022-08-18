@@ -1,1 +1,20 @@
-test
+class Solution {
+    fun solution(s: String): String {
+        var answer = ""
+        s.split(" ").let{ list->
+for (i in list.indices){
+        list[i].forEachIndexed{index, c ->
+answer += if (index.rem(2) == 0) {
+                c.uppercase()
+            } else {
+                c.lowercase()
+            }
+}
+if (list.size.minus(1) > i){
+            answer += " "
+        }
+    }
+        }
+       return answer
+    }
+}
