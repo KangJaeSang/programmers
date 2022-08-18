@@ -1,1 +1,10 @@
-test
+class Solution {
+    fun solution(s: String) = String(
+         ByteArray(s.length).apply {
+             for (i in s.indices){
+                 this[i] = s[i].toByte()
+             }
+             sort()
+             reverse()
+         })
+}
