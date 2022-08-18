@@ -1,1 +1,3 @@
-test
+class Solution {
+    fun solution(num: Int) = if(num.rem(2) == 0) "Even" else "Odd"
+}
