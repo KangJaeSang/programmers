@@ -1,1 +1,13 @@
-test
+fun main(args: Array<String>) {
+    val (a, b) = readLine()!!.split(' ').map(String::toInt)
+    val result = a.times(b)
+    var str = ""
+    for(i in 1..result){
+        if(i%a == 0){
+            str += "*\n"
+        }else {
+            str += "*"
+        }
+    }
+    println(str)
+}
