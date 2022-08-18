@@ -1,0 +1,16 @@
+class Solution {
+fun solution(absolutes: IntArray, signs: BooleanArray): Int {
+var answer = 0
+    var pair = absolutes.asList().zip(signs.asList())
+
+     pair.forEach{
+       if(it.second) {
+           println(it.first)
+           answer += it.first
+        }else {
+          answer = answer - it.first
+           }
+     }
+    return answer
+  }
+}

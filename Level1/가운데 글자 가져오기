@@ -1,0 +1,6 @@
+class Solution {
+fun solution(s: String): String {
+var answer = s.substring(s.length.minus(1).div(2),s.length.div(2).plus(1))
+    return answer
+  }
+}
